@@ -9,6 +9,7 @@ import Events from "./pages/Events";
 import Gallery from "./pages/Gallery";
 import Sponsor from "./pages/Sponsor";
 import Privacy from "./pages/Privacy";
+import IndividualEvent from "./pages/IndividualEvent";
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
   {
     path: "/privacy",
     element: <Privacy />,
+  },
+  {
+    path: "/event/:id",
+    element: <IndividualEvent />,
   },
 ]);
 
