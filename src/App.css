@@ -265,6 +265,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .banner .tagline {
   font-weight: 700;
+  font-size: 2.4rem !important;
   letter-spacing: 0.8px;
   padding: 8px 10px;
   background: linear-gradient(
@@ -743,6 +744,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .sponsor {
   margin: 180px auto 0 auto;
 }
+.sponsorHeading {
+  font-size: 70px !important;
+}
 
 .sponsor_section {
   padding: 80px 0 !important;
@@ -1046,4 +1050,39 @@ svg {
   font-weight: bold;
   cursor: pointer;
   border: 2px solid aqua;
+}
+.Privacy {
+  margin-top: 180px;
+  margin-bottom: 80px;
+}
+.privacyContainer {
+  margin: 0 180px;
+}
+
+@media screen and (max-width: 800px) {
+  .privacyContainer {
+    margin: 0 100px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .privacyContainer {
+    margin: 0 25px;
+  }
+  .sponsorHeading {
+    font-size: 40px !important;
+  }
+  .privacyHeading {
+    font-size: 40px !important;
+  }
+}
+@media screen and (max-width: 350px) {
+  .privacyContainer {
+    margin: 0 10px;
+  }
+  .sponsorHeading {
+    font-size: 30px !important;
+  }
+  .privacyHeading {
+    font-size: 40px !important;
+  }
 }

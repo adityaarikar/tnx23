@@ -68,7 +68,7 @@ export const Banner = () => {
                   }
                 >
                   <span className="tagline">Welcome to TECHNEX - 23</span>
-                  <h1>
+                  <h1 style={{ fontSize: 40 }}>
                     <span
                       className="txt-rotate"
                       dataPeriod="1000"
