@@ -71,7 +71,7 @@ const Sponsor = () => {
         <Container>
           <Row>
             <Col size={12}>
-              <h2>Our Sponsor</h2>
+              <h2 className="sponsorHeading">Our Sponsor</h2>
               <Row>
                 {galley.map((project, index) => {
                   return <SponsorCard key={index} {...project} />;
