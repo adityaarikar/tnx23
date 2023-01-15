@@ -50,7 +50,7 @@ const About = () => {
       <Container>
         <Row>
           <Col size={6}></Col>
-          <Col size={6}>
+          <Col size={6} xs={12} md={6}>
             <TrackVisibility>
               {({ isVisible }) => (
                 <div

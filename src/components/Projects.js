@@ -1,4 +1,4 @@
-import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
+import { Container, Row, Col, Tab, Nav, Button } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import gall1 from "../assets/img/tnxImg/photos/IMG_6823.jpg";
 import gall2 from "../assets/img/tnxImg/photos/IMG_6849.jpg";
@@ -10,6 +10,7 @@ import gall6 from "../assets/img/tnxImg/photos/IMG_7009.jpg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import { ArrowRightCircle } from "react-bootstrap-icons";
+import { Link } from "react-router-dom";
 
 export const Projects = () => {
   const galley = [
@@ -56,9 +57,9 @@ export const Projects = () => {
                 return <ProjectCard key={index} {...project} />;
               })}
             </Row>
-            <button onClick={() => console.log("connect")}>
+            <Link className="galleryLink" to="/gallery">
               Explor More <ArrowRightCircle size={25} />
-            </button>
+            </Link>
           </Col>
         </Row>
       </Container>

@@ -1,11 +1,8 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from "../assets/img/tnxImg/tnxLogo.png";
-import navIcon1 from "../assets/img/nav-icon1.svg";
-import navIcon2 from "../assets/img/nav-icon2.svg";
-import navIcon3 from "../assets/img/nav-icon3.svg";
-import { HashLink } from "react-router-hash-link";
 import { BrowserRouter as Router } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -39,7 +36,7 @@ export const NavBar = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
           </Navbar.Toggle>
-          <Navbar.Collapse id="basic-navbar-nav">
+          <Navbar.Collapse id="basic-navbar-nav" className="mobileNav">
             <Nav className="ms-auto">
               <Nav.Link
                 href="/"
@@ -53,75 +50,62 @@ export const NavBar = () => {
               <Nav.Link
                 href="/about-us"
                 className={
-                  activeLink === "skills" ? "active navbar-link" : "navbar-link"
+                  activeLink === "about" ? "active navbar-link" : "navbar-link"
                 }
-                onClick={() => onUpdateActiveLink("skills")}
+                onClick={() => onUpdateActiveLink("about")}
               >
                 About Us
               </Nav.Link>
               <Nav.Link
                 href="/events"
                 className={
-                  activeLink === "projects"
-                    ? "active navbar-link"
-                    : "navbar-link"
+                  activeLink === "events" ? "active navbar-link" : "navbar-link"
                 }
-                onClick={() => onUpdateActiveLink("projects")}
+                onClick={() => onUpdateActiveLink("events")}
               >
                 Events
               </Nav.Link>
               <Nav.Link
                 href="/gallery"
                 className={
-                  activeLink === "projects"
+                  activeLink === "gallery"
                     ? "active navbar-link"
                     : "navbar-link"
                 }
-                onClick={() => onUpdateActiveLink("projects")}
+                onClick={() => onUpdateActiveLink("gallery")}
               >
                 Gallery
               </Nav.Link>
               <Nav.Link
                 href="sponsor"
                 className={
-                  activeLink === "projects"
+                  activeLink === "sponsor"
                     ? "active navbar-link"
                     : "navbar-link"
                 }
-                onClick={() => onUpdateActiveLink("projects")}
+                onClick={() => onUpdateActiveLink("sponsor")}
               >
                 Sponsor's
               </Nav.Link>
               <Nav.Link
                 href="privacy"
                 className={
-                  activeLink === "projects"
+                  activeLink === "privacy"
                     ? "active navbar-link"
                     : "navbar-link"
                 }
-                onClick={() => onUpdateActiveLink("projects")}
+                onClick={() => onUpdateActiveLink("privacy")}
               >
                 Privacy
               </Nav.Link>
             </Nav>
-            <span className="navbar-text">
-              {/* <div className="social-icon">
-                <a href="#">
-                  <img src={navIcon1} alt="" />
-                </a>
-                <a href="#">
-                  <img src={navIcon2} alt="" />
-                </a>
-                <a href="#">
-                  <img src={navIcon3} alt="" />
-                </a>
-              </div> */}
-              <HashLink to="#connect">
+            {/* <span className="navbar-text">
+              <Link to="/events">
                 <button className="vvd">
                   <span>Register Now</span>
                 </button>
-              </HashLink>
-            </span>
+              </Link>
+            </span> */}
           </Navbar.Collapse>
         </Container>
       </Navbar>

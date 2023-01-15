@@ -101,6 +101,17 @@ nav.navbar {
   z-index: 9999;
   transition: 0.32s ease-in-out;
 }
+
+@media screen and (max-width: 778px) {
+  nav.navbar {
+    background-color: #121212;
+  }
+
+  nav.navbar .navbar-nav .nav-link.navbar-link {
+    margin-top: 10px;
+  }
+}
+
 nav.navbar.scrolled {
   padding: 0px 0;
   background-color: #121212;
@@ -250,6 +261,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -1;
 }
 
+@media screen and (max-width: 767px) {
+  .video {
+    display: none;
+  }
+}
+
 .mainLogo {
   width: 70px;
   height: 70px;
@@ -375,7 +392,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
-/************ Projects Css ************/
+/************ xs Css ************/
 .project {
   padding: 80px 0;
   position: relative;
@@ -395,6 +412,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
   width: 56%;
 }
+
+.project .galleryLink {
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 60px;
+  letter-spacing: 0.8px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
 .project .nav.nav-pills {
   width: 72%;
   margin: 0 auto;

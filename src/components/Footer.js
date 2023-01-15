@@ -3,6 +3,7 @@ import logo from "../assets/img/tnxImg/tnxLogo.png";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
+import youtube from "../assets/img/youtube.svg";
 
 export const Footer = () => {
   return (
@@ -30,14 +31,20 @@ export const Footer = () => {
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
             <div className="social-icon">
-              <a href="#">
-                <img src={navIcon1} alt="Icon" />
+              <a
+                target={"_blank"}
+                href="https://instagram.com/technex_svpcet_nagpur?igshid=NDk5N2NlZjQ="
+              >
+                <img src={navIcon3} alt="instagram" />
               </a>
-              <a href="#">
-                <img src={navIcon2} alt="Icon" />
+              <a
+                target={"_blank"}
+                href="https://youtube.com/@technexsvpcet4463"
+              >
+                <img src={youtube} alt="youtube" />
               </a>
-              <a href="#">
-                <img src={navIcon3} alt="Icon" />
+              <a target={"_blank"} href="https://www.linkedin.com/in/technex">
+                <img src={navIcon1} alt="linkedin" />
               </a>
             </div>
             <p>

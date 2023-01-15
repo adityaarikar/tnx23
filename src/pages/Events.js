@@ -3,58 +3,59 @@ import { Container, Row, Col } from "react-bootstrap";
 import "../App.css";
 
 import bgVideo from "../assets/bgVideo.mp4";
-import logo1 from "../assets/img/tnxImg/logos/arverse.jpg";
-import logo2 from "../assets/img/tnxImg/logos/clueminati.png";
-import logo3 from "../assets/img/tnxImg/logos/encipher.png";
-import logo4 from "../assets/img/tnxImg/logos/gatewalk.png";
-import logo5 from "../assets/img/tnxImg/logos/hackathon.jpg";
-import logo6 from "../assets/img/tnxImg/logos/horizon.png";
-import logo7 from "../assets/img/tnxImg/logos/overdrive.png";
-import logo8 from "../assets/img/tnxImg/logos/projectomania.png";
+import logo1 from "../assets/logos/appathon.png";
+import logo2 from "../assets/logos/hackathon.jpg";
+import logo3 from "../assets/logos/horizon.png";
+import logo4 from "../assets/logos/ideatank.png";
+import logo5 from "../assets/logos/overdrive.jpg";
+import logo6 from "../assets/logos/robowar.png";
+import logo7 from "../assets/logos/skywar.jpg";
 
 import { EventCard } from "../components/EventCard";
 
 const Events = () => {
   const events = [
     {
-      title: "Event Name",
-      imgUrl: logo1,
-      description: "Arverse",
+      id: 1,
+      title: "Hackathon",
+      tagline: "",
+      eventLogo: logo2,
     },
     {
-      title: "Event Name",
-      imgUrl: logo2,
-      description: "Clueminati",
+      id: 2,
+      title: "Horizon",
+      tagline: "",
+      eventLogo: logo3,
     },
     {
-      title: "Event Name",
-      imgUrl: logo3,
-      description: "EnchipherX",
+      id: 3,
+      title: "IdeaTank",
+      tagline: "",
+      eventLogo: logo4,
     },
     {
-      title: "Event Name",
-      imgUrl: logo4,
-      description: "Gatewalk",
+      id: 4,
+      title: "ROBOWAR",
+      tagline: "",
+      eventLogo: logo6,
     },
     {
-      title: "Event Name",
-      imgUrl: logo5,
-      description: "Hackathon",
+      id: 5,
+      title: "SKYWAR 2.O",
+      tagline: "",
+      eventLogo: logo7,
     },
     {
-      title: "Event Name",
-      imgUrl: logo6,
-      description: "Horizon",
+      id: 6,
+      title: "OVERDRIVE",
+      tagline: "",
+      eventLogo: logo5,
     },
     {
-      title: "Event Name",
-      imgUrl: logo7,
-      description: "Overdrive",
-    },
-    {
-      title: "Event Name",
-      imgUrl: logo8,
-      description: "Projectomania",
+      id: 7,
+      title: "Appathon",
+      tagline: "",
+      eventLogo: logo1,
     },
   ];
 
