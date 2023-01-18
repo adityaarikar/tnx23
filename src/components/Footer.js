@@ -10,18 +10,19 @@ export const Footer = () => {
     <footer className="footer">
       <Container>
         <Row className="align-items-center">
-          <Col size={12} sm={6}>
+          <Col size={12} sm={6} className="footerLogo">
             <img src={logo} alt="Logo" />
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
             <h4>Contact Info</h4>
-
-            <p>Shubhi (Coordinator) : 9425484211</p>
-            <p>Shivendra (Coordinator) : 9370404513</p>
-            <p>Janhavi (Co-coordinator) : 9373288578</p>
-            <p>Shruti (Co-coordinator) : 9146446406</p>
+            <p>Janhavi (Coordinator) : 9373288578</p>
+            <p>Adwait (Coordinator) : 9637305576</p>
+            <p>Aditya (Co-coordinator) : 9405880262</p>
+            <p>Bhairav (Co-coordinator) : 7666219863</p>
+            <p>Aditya (Mentor) : 7218616319</p>
+            <p>Shruti (Mentor) : 9146446406</p>
           </Col>
-          <Col size={12} sm={6}>
+          <Col size={12} sm={6} className="footerClg">
             <h4>St. Vincent Pallotti College of Engineering and Technology</h4>
             <p>
               St. Vincent Pallotti College of Engineering & Technology,
@@ -49,10 +50,9 @@ export const Footer = () => {
             </div>
             <p>
               Copyright &copy; 2023 All rights reserved | This website is made
-              with
               <i class="ti-heart" aria-hidden="true"></i> by
               <a href="#" target="_blank">
-                TECHNEX-22 WEB TEAM
+                TECHNEX-23 WEB TEAM
               </a>
             </p>
           </Col>

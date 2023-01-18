@@ -5,6 +5,7 @@ import { ArrowRightCircle } from "react-bootstrap-icons";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 import collegeLogo from "../assets/img/tnxImg/Collegelogo.png";
+import { Link } from "react-router-dom";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -12,7 +13,7 @@ export const Banner = () => {
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = ["28 - 29 March"];
+  const toRotate = ["9 - 10 Feb"];
   const period = 2000;
 
   useEffect(() => {
@@ -90,9 +91,11 @@ export const Banner = () => {
                     annual participation of more than 2500+ technology
                     enthusiasts.
                   </p>
-                  <button onClick={() => console.log("connect")}>
-                    Register Now <ArrowRightCircle size={25} />
-                  </button>
+                  <Link className="registerLink" to={"/events"}>
+                    <button>
+                      Register Now <ArrowRightCircle size={25} />
+                    </button>
+                  </Link>
                 </div>
               )}
             </TrackVisibility>

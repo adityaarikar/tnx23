@@ -770,6 +770,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 150px auto;
 }
 
+.galleryHeading {
+  text-align: center;
+  font-size: 70px;
+}
+
 .sponsor {
   margin: 180px auto 0 auto;
 }
@@ -858,6 +863,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .eventHeading {
   padding-top: 20px;
+  font-size: 40px;
 }
 
 /* /////// register Section///////// */
@@ -978,33 +984,48 @@ svg {
 /* CSS which you need for blurred box */
 
 .blurred-box {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+  padding-top: 40px;
+  width: 70%;
+  margin: auto;
   position: relative;
-  width: 250px;
-  height: 450px;
-  top: calc(50% - 175px);
-  left: calc(50% - 125px);
+  width: 100%;
+  height: auto;
   background: inherit;
-  border-radius: 2px;
+  border-radius: 20px;
   overflow: hidden;
+  margin-bottom: 20px;
+  padding-bottom: 40px;
 }
 
-.blurred-box:after {
+/* .blurred-box::after {
   content: "";
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  height: 400px;
   background: inherit;
   position: absolute;
-  left: -25px;
   left: position;
   right: 0;
-  top: -25px;
   top: position;
   bottom: 0;
   box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.05);
-  filter: blur(10px);
-}
+  filter: blur(5px);
+} */
 
 /* ------------- Particular Event Section ----------*/
+
+.wrapper {
+  z-index: 1000 !important;
+}
 
 .event1 {
   margin-bottom: 200px;
@@ -1103,6 +1124,10 @@ svg {
   .privacyHeading {
     font-size: 40px !important;
   }
+
+  .galleryHeading {
+    font-size: 40px !important;
+  }
 }
 @media screen and (max-width: 350px) {
   .privacyContainer {
@@ -1114,4 +1139,39 @@ svg {
   .privacyHeading {
     font-size: 40px !important;
   }
+}
+
+@media screen and (max-width: 767px) {
+  .footerLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .footerClg {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .glass {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .buttonContainer {
+    flex-direction: column;
+  }
+
+  .regButton {
+    width: 100%;
+  }
+}
+
+.gall-imgbx {
+  margin-bottom: 20px;
+}
+
+.registerLink {
+  text-decoration: none;
 }

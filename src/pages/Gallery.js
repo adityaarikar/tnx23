@@ -85,8 +85,8 @@ const Gallery = () => {
       <Container className="gallery">
         <Row>
           <Col size={12}>
-            <h2>Gallery</h2>
-            <Row >
+            <h1 className="galleryHeading">Gallery</h1>
+            <Row>
               {galley.map((project, index) => {
                 return <GalleryCard key={index} {...project} />;
               })}

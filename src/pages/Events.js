@@ -12,53 +12,9 @@ import logo6 from "../assets/logos/robowar.png";
 import logo7 from "../assets/logos/skywar.jpg";
 
 import { EventCard } from "../components/EventCard";
+import { events } from "../data";
 
 const Events = () => {
-  const events = [
-    {
-      id: 1,
-      title: "Hackathon",
-      tagline: "",
-      eventLogo: logo2,
-    },
-    {
-      id: 2,
-      title: "Horizon",
-      tagline: "",
-      eventLogo: logo3,
-    },
-    {
-      id: 3,
-      title: "IdeaTank",
-      tagline: "",
-      eventLogo: logo4,
-    },
-    {
-      id: 4,
-      title: "ROBOWAR",
-      tagline: "",
-      eventLogo: logo6,
-    },
-    {
-      id: 5,
-      title: "SKYWAR 2.O",
-      tagline: "",
-      eventLogo: logo7,
-    },
-    {
-      id: 6,
-      title: "OVERDRIVE",
-      tagline: "",
-      eventLogo: logo5,
-    },
-    {
-      id: 7,
-      title: "Appathon",
-      tagline: "",
-      eventLogo: logo1,
-    },
-  ];
-
   return (
     <div className="App">
       <video className="video" src={bgVideo} autoPlay loop muted />
