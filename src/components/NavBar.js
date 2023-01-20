@@ -76,7 +76,7 @@ export const NavBar = () => {
               >
                 Gallery
               </Nav.Link>
-              <Nav.Link
+              {/* <Nav.Link
                 href="sponsor"
                 className={
                   activeLink === "sponsor"
@@ -86,7 +86,7 @@ export const NavBar = () => {
                 onClick={() => onUpdateActiveLink("sponsor")}
               >
                 Sponsor's
-              </Nav.Link>
+              </Nav.Link> */}
               <Nav.Link
                 href="privacy"
                 className={
@@ -99,13 +99,6 @@ export const NavBar = () => {
                 Privacy
               </Nav.Link>
             </Nav>
-            {/* <span className="navbar-text">
-              <Link to="/events">
-                <button className="vvd">
-                  <span>Register Now</span>
-                </button>
-              </Link>
-            </span> */}
           </Navbar.Collapse>
         </Container>
       </Navbar>

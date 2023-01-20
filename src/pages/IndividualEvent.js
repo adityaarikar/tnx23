@@ -23,8 +23,8 @@ const IndividualEvent = () => {
               </div>
               <div className="content1">
                 {indEvent[0].tagline === "" ? null : (
-                  <div>
-                    <h6>{indEvent[0].tagline}</h6>
+                  <div className="event-line">
+                    <h3>''{indEvent[0].tagline}.''</h3>
                   </div>
                 )}
                 {indEvent[0].description === "" ? null : (
@@ -35,11 +35,6 @@ const IndividualEvent = () => {
                 {indEvent[0].prize === "" ? null : (
                   <div>
                     <h4>Prize Amount : {indEvent[0].prize}/-</h4>
-                  </div>
-                )}
-                {indEvent[0].fees === "" ? null : (
-                  <div>
-                    <h4>Registration Fees : {indEvent[0].fees}/-</h4>
                   </div>
                 )}
                 {indEvent[0].fees === "" ? null : (
@@ -104,7 +99,7 @@ const IndividualEvent = () => {
                     href={indEvent[0].pdfLink}
                     target={"_blank"}
                   >
-                    <p class="box">Register Now</p>
+                    <p class="box">Rule Book</p>
                   </a>
                 </div>
               </div>

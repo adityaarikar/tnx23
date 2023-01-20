@@ -1175,3 +1175,7 @@ svg {
 .registerLink {
   text-decoration: none;
 }
+
+.event-line {
+  margin-bottom: 10px;
+}

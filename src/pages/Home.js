@@ -11,7 +11,7 @@ const Home = () => {
       <video className="video" src={bgVideo} autoPlay loop muted />
       <div className="homeMain">
         <Banner />
-        <Skills />
+        {/* <Skills /> */}
         <Projects />
       </div>
     </div>
