@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from "../assets/img/tnxImg/tnxLogo.png";
 import { BrowserRouter as Router } from "react-router-dom";
-import { Link } from "react-router-dom";
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");

@@ -3,13 +3,13 @@ import "../App.css";
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import TrackVisibility from "react-on-screen";
-import { ProjectCard } from "../components/ProjectCard";
 import gall1 from "../assets/img/tnxImg/photos/IMG_6823.jpg";
 import gall2 from "../assets/img/tnxImg/photos/IMG_6849.jpg";
 import gall3 from "../assets/img/tnxImg/photos/IMG_6889.jpg";
 import gall4 from "../assets/img/tnxImg/photos/IMG_6906.jpg";
 import gall5 from "../assets/img/tnxImg/photos/IMG_6970.jpg";
 import gall6 from "../assets/img/tnxImg/photos/IMG_7009.jpg";
+import mainPoster from "../assets/img/mainPoster.jpg";
 
 const About = () => {
   const galley = [
@@ -49,7 +49,9 @@ const About = () => {
     <section className="about" id="abouts">
       <Container>
         <Row>
-          <Col size={6}></Col>
+          <Col size={6}>
+            <img className="mainPoster" src={mainPoster} alt="Main Poster" />
+          </Col>
           <Col size={6} xs={12} md={6}>
             <TrackVisibility>
               {({ isVisible }) => (
@@ -58,7 +60,7 @@ const About = () => {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  <h2>Previous Glimpses</h2>
+                  <h2>About Us</h2>
                   <p>
                     Technex is our flagship Technical event held annually which
                     attracts hundreds of Engineering students from different

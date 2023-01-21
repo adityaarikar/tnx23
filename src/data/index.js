@@ -2,16 +2,16 @@ import logo1 from "../assets/logos/hackathon.png";
 import logo2 from "../assets/logos/horizon.png";
 import logo3 from "../assets/logos/ideatank.png";
 import logo4 from "../assets/logos/robowar.png";
-import logo5 from "../assets/logos/skywar.jpg";
-import logo6 from "../assets/logos/overdrive.jpg";
+import logo5 from "../assets/logos/skywar.png";
+import logo6 from "../assets/logos/overdrive.png";
 import logo7 from "../assets/logos/appathon.png";
 import logo8 from "../assets/logos/gatewalk.png";
 
 import poster1 from "../assets/posters/hackathon.png";
 import poster2 from "../assets/posters/horizon.jpg";
-import poster3 from "../assets/posters/ideatank.jpg";
+import poster3 from "../assets/posters/projectomania.png";
 import poster4 from "../assets/posters/robowar.jpg";
-// import poster5 from "../assets/posters/skywar.jpg";
+import poster5 from "../assets/posters/skywar.jpg";
 import poster6 from "../assets/posters/overdrive.jpg";
 // import poster7 from "../assets/posters/appathon.png";
 import poster8 from "../assets/posters/gatewalk.jpg";
@@ -61,7 +61,7 @@ const events = [
       "https://drive.google.com/file/d/1YhkqJ_TOoNy5VCQyN1gLiLG3wu-xU6n4/view?usp=share_link",
     description:
       "This event participants are expected to show their creativity and design bridges with the help of materials provided ( i.e. popsicles, adhesive and cutters).There will be criteria to design the bridge about weight, dimensions,etc. The rule book will be provided to participants.This will be two day event.In 1st day participants will be making their bridges.2nd day evaluation / testing.",
-    prize: "45,000",
+    prize: "35,000",
     fees: "400",
     eventDate: "9th & 10th Feb",
     lastDate: "",
@@ -75,7 +75,7 @@ const events = [
   },
   {
     id: 3,
-    title: "IdeaTank",
+    title: "ProjectOMania",
     tagline: "Think Design Innovate.",
     eventLogo: logo3,
     poster: poster3,
@@ -84,7 +84,7 @@ const events = [
       "https://drive.google.com/file/d/1VVGykZbnYqU0RGfDI5k1ueKvTpUUnKEi/view?usp=share_link",
     description:
       "IdeaTank is an interactive event where students get to pitch their creative and unique project ideas or present their working models related to different fields like business, technical or non-technical.A platform for students to showcase their creativity and pitch their product and get expert opinions as well as a guidance towards realistic approach.It is a 2 day event consisting of 2 rounds.In the first round participants will get 3 minutes for presentation and 3 minutes for interaction with the judges.In the second round only the shortlisted teams will get to present their ideas, where they will get 5 minutes for presentation ",
-    prize: "35,000",
+    prize: "30,000",
     fees: "350",
     eventDate: "9th & 10th Feb",
     lastDate: "",
@@ -124,7 +124,7 @@ const events = [
     title: "SKYWAR 2.O",
     tagline: "Look up there are no limits",
     eventLogo: logo5,
-    poster: logo5,
+    poster: poster5,
     regURL:
       "https://droneracingindia.com/events/f885f3a0-19b7-4a78-9fc1-1076446ceab6",
     pdfLink:
@@ -179,7 +179,7 @@ const events = [
     description:
       "Appathon is an over night application development event . The themes of the application to be made are Ar,web3 etc",
     prize: "20,000",
-    fees: "300",
+    fees: "200",
     eventDate: "9th & 10th Feb",
     lastDate: "",
     resultDate: "10th Feb",
