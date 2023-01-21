@@ -58,7 +58,7 @@ export const Projects = () => {
               })}
             </Row>
             <Link className="galleryLink" to="/gallery">
-              Explor More <ArrowRightCircle size={25} />
+              Explore More <ArrowRightCircle size={25} />
             </Link>
           </Col>
         </Row>
